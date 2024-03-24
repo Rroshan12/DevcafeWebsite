@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Prepare') {
+         stage('Checkout') {
             steps {
-                // Disable strict host key checking temporarily
-                sh 'GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git fetch --tags --force --progress --prune'
+                // Checkout code from GitHub
+                git 'git@github.com:Rroshan12/DevcafeWebsite.git'
             }
         }
         stage('Build') {
