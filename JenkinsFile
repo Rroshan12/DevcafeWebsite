@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('Prepare') {
+            steps {
+                // Fetch and append GitHub host key to known_hosts
+                sh 'ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
