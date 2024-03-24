@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Prepare') {
             steps {
-                // Fetch and append GitHub host key to known_hosts
-                sh 'ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts'
+                // Disable strict host key checking temporarily
+                sh 'GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no" git fetch --tags --force --progress --prune'
             }
         }
         stage('Build') {
