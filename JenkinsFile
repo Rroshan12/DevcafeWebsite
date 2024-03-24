@@ -15,15 +15,17 @@ pipeline {
         stage('Docker Build') {
             steps {
                 script {
-                    docker.build('my-node-app')
+                    docker.build('devcafe-website')
                 }
             }
         }
         stage('Docker Publish') {
             steps {
-                script {
-                    docker.withRegistry('https://your-docker-registry.com', 'docker-registry-credentials') {
-                        docker.image('my-node-app').push('latest')
+                withCredentials([usernamePassword(credentialsId: 'docker-registry-credentials', usernameVariable: 'DOCKER_REGISTRY_USERNAME', passwordVariable: 'DOCKER_REGISTRY_PASSWORD')]) {
+                    script {
+                        docker.withRegistry('https://hub.docker.com', 'DOCKER_REGISTRY_USERNAME', 'DOCKER_REGISTRY_PASSWORD') {
+                            docker.image('devcafe-website').push('latest')
+                        }
                     }
                 }
             }
