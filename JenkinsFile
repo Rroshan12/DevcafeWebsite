@@ -1,0 +1,32 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'npm install'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'npm test'
+            }
+        }
+        stage('Docker Build') {
+            steps {
+                script {
+                    docker.build('my-node-app')
+                }
+            }
+        }
+        stage('Docker Publish') {
+            steps {
+                script {
+                    docker.withRegistry('https://your-docker-registry.com', 'docker-registry-credentials') {
+                        docker.image('my-node-app').push('latest')
+                    }
+                }
+            }
+        }
+    }
+}
