@@ -15,7 +15,7 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Lato:wght@300;400;700",
+      "primary": "IBM Plex Sans, sans-serif",
       "primary_type": "sans-serif"
     },
     "font_size": {
