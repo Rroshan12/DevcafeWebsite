@@ -1,11 +1,11 @@
 {
   "main": [
     {
-      "name": "HomeD",
+      "name": "Home",
       "url": "/"
     },
     {
-      "name": "Blog",
+      "name": "BlogD",
       "url": "/blogs"
     },
     {
