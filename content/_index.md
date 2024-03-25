@@ -1,7 +1,7 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Let us help you overcome your website and ERP solutions development challenges
+  content: Let us assist you with a wide range of services, including mobile app development, website development, website hosting, and much more. Whatever your digital needs may be, we've got you covered.
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
