@@ -14,7 +14,7 @@ const Logo = ({ src }) => {
       style={{
         height: logo_height.replace("px", "") + "px",
         width: logo_width.replace("px", "") + "px",
-        marginTop: "-100px"
+        marginTop: "-30px"
       }}
     >
       {src || logo ? (

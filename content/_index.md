@@ -32,8 +32,8 @@ feature:
 
 # services
 services:
-  - title: "It is the most advanced digital marketing and it company."
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Revolutionize Your Data Visualization with Stunning Bar Reports"
+    content: "Elevate your data analysis game with our cutting-edge digital marketing and IT company's latest innovation: visually captivating bar reports. Gone are the days of dull spreadsheets and tedious presentations. With our advanced technology and expertise, we transform raw data into dynamic, easy-to-understand visuals that breathe life into your insights."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
