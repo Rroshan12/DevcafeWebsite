@@ -4,4 +4,4 @@
 cd /var/lib/jenkins/workspace/devcafe-website
 
 # Run docker-compose up command
-docker-compose up --scale api = 2
+docker-compose up --scale api=2
