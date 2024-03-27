@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: 'docker-compose',
+        name: 'devcafe-website',
         script: '/var/lib/jenkins/workspace/devcafe-website/start-docker-compose.sh',
         autorestart: true,
         watch: false,
