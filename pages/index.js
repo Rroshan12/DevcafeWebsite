@@ -18,8 +18,8 @@ const Home = ({ frontmatter }) => {
       {/* Banner */}
       <section className="section pb-[50px]">
         <div className="container">
-          <div className="flex row text-center">
-            <div className="flex mx-auto lg:col-15">
+          <div className="lg:flex row text-center">
+            <div className="lg:flex mx-auto lg:col-15">
               <div className="lg:col-5">
               <h2 className="font-primary font-bold">{banner.title}</h2>
               <p className="mt-4">{markdownify(banner.content)}</p>
