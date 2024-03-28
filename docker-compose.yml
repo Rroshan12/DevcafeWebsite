@@ -4,6 +4,9 @@ services:
 
   api:
     build: .
+    restart: always
+    volumes:
+    - .:/app
   
   nginx:
     image: nginx:latest
