@@ -1,11 +1,11 @@
 {
   "site": {
-    "title": "Bigspring Light Nextjs",
+    "title": "Devcafe Pvt Ltd",
     "base_url": "/",
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
-    "logo_width": "60",
-    "logo_height": "40",
+    "logo_width": "180",
+    "logo_height": "100",
     "logo_text": "Devcafe"
   },
 
