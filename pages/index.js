@@ -15,6 +15,7 @@ const Home = ({ frontmatter }) => {
 
   return (
     <Base title={title}>
+         
       {/* Banner */}
       <section className="section pb-[50px]">
         <div className="container">
